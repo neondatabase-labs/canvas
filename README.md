@@ -27,6 +27,12 @@ npm install
 1. Sign up for a [Neon account](https://neon.tech)
 2. Create a new project
 3. Copy your database connection string (you'll need this for the next steps)
+4. Apply the migration from `seed.sql`
+5. Run:
+```console
+npx zero-deploy-permissions --schema-path='./src/schema.ts'  --output-file='/tmp/permissions_canvas.sql'
+```
+and run the content of that file in your DB
 
 ### Step 3: Run Locally
 
